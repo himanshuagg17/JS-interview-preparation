@@ -5,7 +5,19 @@
 // It acts like a blueprint for objects
 // other languages use classes for the same purpose
 
-// example
+
+// without this keyword
+
+function Student(name,age,address,contact){
+    let obj={};
+    obj.name=name;
+    obj.age=age;
+    obj.address=address;
+    obj.contact=contact;
+    return obj;
+}
+
+// example , using this keyword, the this keyword creates an object , adds properties to it and returns the same object.
 
 function Student(name,age,address,contact){
     this.name=name;
